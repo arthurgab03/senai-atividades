@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de notas</title>
+</head>
+<body>
+    <script> 
+
+    var nota1 = parseFloat(window.prompt("Digite a sua primeira nota"));
+    var nota2 = parseFloat(window.prompt("Digite a sua segunda nota"));
+    var nota3 = parseFloat(window.prompt("Digite a sua terceira nota"));
+    var media = (nota1 + nota2 + nota3)/3;
+    
+    if (media > 6){
+        alert("Parabéns! Você passou de ano com a média " + media +"!");
+    } else if (media == 6) {
+        alert("Sua média foi " + media +"! Você vai para a recuperação.");
+    } else {
+        alert("Sua média foi " + media +"! Você está reprovado.")
+    }
+    
+    </script>
+    
+</body>
+</html>

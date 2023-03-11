@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada e saída de peças</title>
+</head>
+<body>
+
+    <script>
+        var sair = "n";
+        var saldo = parseInt(prompt("Informe o seu saldo inicial"));
+
+        while (sair == "n") {
+            var tipo = parseInt(prompt("Informe o tipo de entrada"));
+            var quantidade = parseInt(prompt("Informe a quantidade"));
+
+            if (tipo == 1 ){
+                saldo = saldo + quantidade;
+                document.write("Entrada: "+ quantidade + "<br>");
+                
+            } else if (tipo == 2) {
+                if (saldo >= quantidade) {
+                    saldo = saldo - quantidade;
+                    document.write("Saída: "+ quantidade + "<br>");
+                }
+
+                else {
+                    alert("SALDO INSUFICIENTE!");
+                    document.write("Saldo insuficiente!");
+                }
+            } else {
+                alert("CÓDIGO INCORRETO!");
+            }
+
+            document.write("Saldo: " + saldo + "<br>");
+
+             sair = prompt("Deseja encerrar? (s/n)");
+
+           
+            
+            
+        }
+
+        document.write("SISTEMA ENCERRADO.");
+        alert("SISTEMA ENCERRADO.");
+    </script>
+    
+</body>
+</html>
