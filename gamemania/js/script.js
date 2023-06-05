@@ -17,8 +17,8 @@ function login(){
     var senha = document.getElementById('senha').value;
     var erro = document.querySelector('.login-erro');
 
-    if(usuario == 'admin' && senha == 'Arthur1@n'){
-        window.location = 'index.html';
+    if(usuario == 'admin' && senha == 'arthur123'){
+        window.location = 'logado.html';
     } else {
         erro.classList.add('mostra');   
         

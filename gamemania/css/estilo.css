@@ -56,6 +56,40 @@
     font-weight: bold;
 }
 
+/* Consoles */
+
+#section-consoles {
+
+    margin: 5rem 0;
+    text-align: center;
+}
+
+#section-consoles h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#section-consoles img {
+    width: 200px;
+}
+
+#section-consoles #btn1 {
+    background-color: transparent;
+
+    width: 220px;
+    transition: 300ms all;
+    border: none;
+    padding-bottom: 0px;
+    margin-right: 3rem;
+    
+    
+}
+
+#section-consoles #btn1:hover {
+    scale:calc(1.1);
+    
+}
 
 /*Rodapé*/
 
@@ -127,10 +161,10 @@ footer a {
 
 /* responsividade */
 
-@media screen and (max-width: 575px ){
+@media screen and (max-width: 575px) {
 
 
-    .card-group{
+    .card-group {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -139,11 +173,11 @@ footer a {
 
     #section-banners img {
         height: 300px;
-    
+
     }
 
     #voltar-topo {
-       display: none;
+        display: none;
     }
 
 }
