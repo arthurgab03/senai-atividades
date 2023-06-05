@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 /*cabeçalho*/
 .navbar-brand img {
     width: 5rem;
@@ -91,6 +94,73 @@
     
 }
 
+#section-consoles a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#section-consoles a:hover {
+    color: #fff;
+}
+
+
+/* Jogos */
+
+#section-jogos {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#section-jogos h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+#section-jogos #card-group {
+    width: 95vw;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+
+#section-jogos .card {
+    width: 150px;
+    border: none;
+}
+
+#section-jogos img {
+    width: 150px;
+    height: 130px;
+    
+}
+
+#section-jogos .card-top {
+    width: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.479);
+    border-top: none;
+}
+
+#section-jogos .card-bottom {
+    width: 150px;
+    height:  100px;
+    border: 1px solid rgba(0, 0, 0, 0.479);
+    border-top: none;
+}
+
+#section-jogos .card-bottom p {
+    margin: 10px;
+} 
+
+#section-jogos .card {
+    width: 150px;
+}
+
+
+
 /*Rodapé*/
 
 footer {
@@ -179,5 +249,17 @@ footer a {
     #voltar-topo {
         display: none;
     }
+
+    #section-consoles #btn1 {
+        margin-right: 0;
+    }
+
+    #section-jogos #card-group {
+        background-color: #000;
+        gap: 2rem;
+
+    }
+
+    
 
 }
